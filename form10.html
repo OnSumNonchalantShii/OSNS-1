@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Kegiatan</title>
+</head>
+<body>
+        <h1>Form Pendaftaran Kegiatan</h1>
+        <form action="#" method="post">
+            <table  border = 1>
+                <tr>
+                    <td><label for="name">Nama Lengkap:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Nomor Telepon:</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Tanggal Lahir:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Jenis Kelamin:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JK</td>
+                    <td>
+                        <input type="radio" name="gender" >L
+                        <input type="radio" name="gender" >P
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="interests">Minat:</label></td>
+                    <td>
+                        <input type="checkbox" id="programming" name="interests" value="programming">
+                        <label for="programming">Programming</label>
+                        <input type="checkbox" id="networking" name="interests" value="networking">
+                        <label for="networking">Networking</label>
+                        <input type="checkbox" id="design" name="interests" value="design">
+                        <label for="design">Design</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="event">Pilih Kegiatan:</label></td>
+                    <td>
+                        <select id="event" name="event" required>
+                            <option value="workshop">Workshop</option>
+                            <option value="seminar">Seminar</option>
+                            <option value="competition">Competition</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="message">Pesan:</label></td>
+                    <td><textarea id="message" name="message" rows="4" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <button type="submit">Daftar</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
